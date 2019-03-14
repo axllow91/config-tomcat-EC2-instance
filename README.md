@@ -52,7 +52,8 @@ Now, create a tomcat user so that you can manage the tomcat server remotely.
 
 Edit **/home/ubuntu/tomcat/conf/tomcat-users.xml**, and add the following line:
 
-**<user username="tomcat" password="123456" roles="manager-gui,admin-gui"/>**
+
+      <user username="tomcat" password="123456" roles="manager-gui,admin-gui"/>
 
 
 By doing so, you've created a user named "tomcat", and its password is "123456". You've also granted two roles "manager-gui" and "admin-gui" to it.

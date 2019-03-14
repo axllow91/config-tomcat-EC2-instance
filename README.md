@@ -42,8 +42,9 @@ host-manager and manager are two useful default applications provided by Tomcat 
 
 To change this, you need to change **/home/ubuntu/tomcat/webapps/host-manager/META-INF/context.xml** and **/home/ubuntu/tomcat/webapps/manager/META-INF/context.xml** by deleting the following lines:
 
-<Valve className="org.apache.catalina.valves.RemoteAddrValve" 
-allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+      <Valve className="org.apache.catalina.valves.RemoteAddrValve" 
+
+            allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
       
 **Create a Tomcat User**
 
